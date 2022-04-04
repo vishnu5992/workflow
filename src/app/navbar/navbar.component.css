@@ -34,3 +34,7 @@ a{
     color: azure;
     cursor: pointer;
 }
+img{
+    width: 100%;
+    height: 684px;
+}

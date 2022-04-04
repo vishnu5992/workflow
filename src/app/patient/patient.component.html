@@ -1,6 +1,7 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <div class="bgimage">
     <div>
-        <h1 style="color: black; padding-top: 0px; text-align: center;" class="head">ADMIN LOGIN</h1><br>
+        <h1 style="color: black; padding-top: 0px; text-align: center;" class="head">PATIENT LOGIN</h1><br>
  <div class="box">
   <h3 style="text-align: center; padding: 20px;" >LOGIN TO PROCEED</h3>
   <hr class="new"><br>
@@ -8,20 +9,23 @@
         <div class="login-div" align="center">
             <table class="loginform">
                 <tr>
-                    <td><label for="username">Username: &nbsp;</label></td>
+                    <td><i class="fa fa-user icon"></i></td>
                     <td><input type="username" id="username" name="username" 
                         class="searchTextField" placeholder="Enter Username" ngModel>
                     </td>	 
                 </tr><br>
                 <tr>
-                    <td><label for="password">Password: </label></td>
+                    <td> <i class="fa fa-key icon"></i></td>
                     <td><input type="password" id="password" name="password"
                         class="searchTextField" placeholder="Enter Password" ngModel>
                 </td>
                 </tr>
                 <tr>
                     <td colspan="2" align="center"><br>
-                    <input type="submit" value="Login" class="actionBtn"  routerLink="/admindashboard"></td>
+                    <input type="submit" value="Login" class="actionBtn"  routerLink="/patientdashboard" >
+                    /
+                    <a role="button" routerLink="/createpatient">CreateAccount</a>
+                    </td>
                 </tr>
                 </table>
             </div>

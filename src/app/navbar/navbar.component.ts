@@ -6,10 +6,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./navbar.component.css']
 })
 export class NavbarComponent implements OnInit {
-
+imgVisible = true
   constructor() { }
 
   ngOnInit(): void {
   }
-
+ changeImage(){
+   this.imgVisible=false
+ }
 }

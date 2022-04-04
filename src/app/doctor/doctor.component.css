@@ -4,7 +4,7 @@
     margin: 0;
 }
 .bgimage{
-    background-image: url("../../assets/adminlog.jpg");
+    background-image: url("../../assets/doctorlogin.jpg");
     background-size: 100%;
     background-position: 100%; 
     height: 567px; 
@@ -39,7 +39,8 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
 	height: 30px;
     width: 170px;
     border-radius: 5px;
-    padding-left: 5px
+    padding-left: 5px;
+    margin-right: 0px;
 }
 .actionBtn {
     background-color: green;
@@ -58,3 +59,15 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
 .head{
     font-family: 'Heebo', sans-serif;
 }
+.icon {
+    padding: 10px;
+    background: dodgerblue;
+    color: white;
+    min-width: 50px;
+    text-align: center;
+  }
+  a{
+      color: dodgerblue;
+      cursor: pointer;
+      text-decoration: none;
+  }
