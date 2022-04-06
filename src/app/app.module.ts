@@ -17,6 +17,12 @@ import { PatientdashboardComponent } from './patientdashboard/patientdashboard.c
 import { AdmindashboardComponent } from './admindashboard/admindashboard.component';
 import { CreateappoinmentComponent } from './createappoinment/createappoinment.component';
 import { CreatefeedbackComponent } from './createfeedback/createfeedback.component';
+import { PatientdetailsComponent } from './patientdetails/patientdetails.component';
+import { AdminappoinmentdetailsComponent } from './adminappoinmentdetails/adminappoinmentdetails.component';
+import { AdminfeedbackComponent } from './adminfeedback/adminfeedback.component';
+import { AppoinmentstatusComponent } from './appoinmentstatus/appoinmentstatus.component';
+import { HttpClientModule } from '@angular/common/http';
+import { AppoinmentstatusforpatientComponent } from './appoinmentstatusforpatient/appoinmentstatusforpatient.component';
 
 @NgModule({
   declarations: [
@@ -34,11 +40,18 @@ import { CreatefeedbackComponent } from './createfeedback/createfeedback.compone
     PatientdashboardComponent,
     AdmindashboardComponent,
     CreateappoinmentComponent,
-    CreatefeedbackComponent
+    CreatefeedbackComponent,
+    PatientdetailsComponent,
+    AdminappoinmentdetailsComponent,
+    AdminfeedbackComponent,
+    AppoinmentstatusComponent,
+    AppoinmentstatusforpatientComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

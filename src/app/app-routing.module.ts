@@ -1,7 +1,11 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AdminComponent } from './admin/admin.component';
+import { AdminappoinmentdetailsComponent } from './adminappoinmentdetails/adminappoinmentdetails.component';
 import { AdmindashboardComponent } from './admindashboard/admindashboard.component';
+import { AdminfeedbackComponent } from './adminfeedback/adminfeedback.component';
+import { AppoinmentstatusComponent } from './appoinmentstatus/appoinmentstatus.component';
+import { AppoinmentstatusforpatientComponent } from './appoinmentstatusforpatient/appoinmentstatusforpatient.component';
 import { CreateappoinmentComponent } from './createappoinment/createappoinment.component';
 import { CreatedoctorComponent } from './createdoctor/createdoctor.component';
 import { CreatefeedbackComponent } from './createfeedback/createfeedback.component';
@@ -12,6 +16,7 @@ import { DoctorhomepageComponent } from './doctorhomepage/doctorhomepage.compone
 import { HomeComponent } from './home/home.component';
 import { PatientComponent } from './patient/patient.component';
 import { PatientdashboardComponent } from './patientdashboard/patientdashboard.component';
+import { PatientdetailsComponent } from './patientdetails/patientdetails.component';
 import { PatienthomepageComponent } from './patienthomepage/patienthomepage.component';
 
 const routes: Routes = [
@@ -27,7 +32,12 @@ const routes: Routes = [
   {path:'patientdashboard',component:PatientdashboardComponent},
   {path:'admindashboard',component:AdmindashboardComponent},
   {path:'createappoinment',component:CreateappoinmentComponent},
-  {path:'createfeedback',component:CreatefeedbackComponent}
+  {path:'createfeedback',component:CreatefeedbackComponent},
+  {path:'patientdetails',component:PatientdetailsComponent},
+  {path:'adminappoinment',component:AdminappoinmentdetailsComponent},
+  {path:'adminfeedback',component:AdminfeedbackComponent},
+  {path:'appoinmentstatus',component:AppoinmentstatusComponent},
+  {path:'appoimentstatusforpatient',component:AppoinmentstatusforpatientComponent}
 ];
 
 @NgModule({

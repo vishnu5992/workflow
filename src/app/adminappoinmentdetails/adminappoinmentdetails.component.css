@@ -100,7 +100,6 @@
       
     }
     
-    
     .sidebar a {
       color: #fff;
       display: block;
@@ -120,5 +119,20 @@
     .sidebar i {
       padding-left: 10px;
     }
-    
-    
+    .container{
+        margin-left: 350px;
+    }
+    td,th{
+      border: 1px solid #dddddd;
+    }
+    td{
+      text-align: center;
+    }
+    table{
+      margin-right: 220px;
+      border-collapse: collapse;
+    }
+    th{
+      background-color: dodgerblue;
+      color: white;
+    }

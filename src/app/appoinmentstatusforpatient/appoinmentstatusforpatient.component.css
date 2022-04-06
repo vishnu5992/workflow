@@ -121,4 +121,10 @@
       padding-left: 10px;
     }
     
-    
+    .container{
+        margin-left: 400p;
+    }
+    h1{
+        text-align: center;
+        color: black;
+    }

@@ -37,7 +37,8 @@
       <a><i class="fas fa-tachometer-alt"></i><span>Dashboard</span></a>
       <a  routerLink="/createappoinment" routerLinkActive="Active"><i class="fas fa-history"></i><span>Appointment</span></a>
       <a  routerLink="/createfeedback"routerLinkActive="active"><i class="fas fa-question-circle"></i><span>FeedBack</span></a>
-  
+      <a  routerLink="/appoimentstatusforpatient"routerLinkActive="active"><i class="fas fa-question-circle"></i><span>Appoinment Status</span></a>
+
     </div>
 
     <br><br><br><br>
@@ -51,7 +52,7 @@
                     <label>DoctorName:</label><br>
                     </div>
                     <div>
-                    <input type="text"  name="doctorName" class="form-control" />
+                    <input type="text" [(ngModel)]="DoctorName"   name="doctorName" class="form-control" />
                     </div>
                 </div><br>
                 <div>
@@ -59,13 +60,13 @@
                        <label>PatientName:</label><br>
                    </div>
                    <div>
-                    <input type="text"  name="patientName" class="form-control" /><br>
+                    <input type="text" [(ngModel)]="PatientName"  name="patientName" class="form-control" /><br>
                    </div><br>
                    <div>
                        <label>Description:</label><br>
                    </div>
                    <div>
-                    <input type="text" name="description" class="form-control" />
+                    <input type="text" [(ngModel)]="Description" name="description" class="form-control" />
 
                    </div>
                 </div><br>
@@ -73,14 +74,15 @@
                     <label>Date:</label><br>
                 </div>
                 <div>
-                    <input type=date class="form-control" name="day" id="date">
+                    <input type=date  [(ngModel)]="Date" class="form-control" name="day" id="date">
 
                 </div>
                 <br><br>
-                <input type="submit" value="Book Appointment" class="btn btn-success" />
+                <input type="submit" value="Book Appointment" (click)="Submit()" class="btn btn-success" />
 
             </form>
         </div>
     </div>
+    <h1></h1>
 </body>
 </html>
