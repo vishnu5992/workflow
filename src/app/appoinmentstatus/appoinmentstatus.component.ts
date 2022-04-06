@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Router } from '@angular/router';
+import { StatusService } from '../status.service';
 @Component({
   selector: 'app-appoinmentstatus',
   templateUrl: './appoinmentstatus.component.html',
@@ -8,14 +9,17 @@ import { Router } from '@angular/router';
 })
 export class AppoinmentstatusComponent implements OnInit {
 
-  val="your status in progress"
-  constructor(public http:HttpClient,public router:Router) { }
+  constructor(public http:HttpClient,public router:Router ,private st:StatusService) { }
+  private readonly newProperty  = "your status in progress";
+
   ngOnInit(): void {
+    this.newProperty
 
   }
 status(){
-  this.http.post<any>("http://localhost:3000/status",this.val).subscribe(res=>{
-       this.router.navigate(['appoimentstatusforpatient'])
-  });
+  this.st.status="In progress"
+}
+appoin(){
+  this.st.status="Appoin"
 }
 }
