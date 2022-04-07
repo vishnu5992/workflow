@@ -17,9 +17,9 @@ export class AppoinmentstatusComponent implements OnInit {
 
   }
 status(){
-  this.st.status="In progress"
+  this.st.status="Your Appoinment In progress !! "
 }
 appoin(){
-  this.st.status="Appoin"
+  this.st.status="Your Appoinment Created Sucessfully!!"
 }
 }

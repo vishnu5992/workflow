@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo&family=Oswald:wght@200&family=Source+Sans+Pro:wght@300&display=swap');
+
 *{
     margin: 0px;  
   }
@@ -124,4 +126,25 @@
         margin-left: 400px;
         text-align: center;
     }
-    
+    .statusButtons{
+      margin-top: 100px;
+      background: rgba( 255, 255, 255, 0.25 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 20px );
+-webkit-backdrop-filter: blur( 20px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+padding: 10px;
+width: 30%;
+margin-left: 370px;
+    }
+    button{
+      background-color: #19B3D3;
+      color: white;
+      padding: 5px;
+    }
+    #head{
+      font-family: 'Heebo', sans-serif;
+font-family: 'Oswald', sans-serif;
+font-family: 'Source Sans Pro', sans-serif;
+    }
